@@ -95,6 +95,7 @@
     <Content Include="Code.js" />
     <Content Include="HomePage.html" />
     <Content Include="My Project\Code.js" />
+    <Content Include="HomePage.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
