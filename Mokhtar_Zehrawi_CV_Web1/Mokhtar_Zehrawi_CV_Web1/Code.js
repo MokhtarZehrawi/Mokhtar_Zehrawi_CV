@@ -1,6 +1,9 @@
 ﻿console.log('hello world');
 
-var a123 = 'hello world';
+var introArr = ["Network Security Analyst", "Web Developer", "Software Programmer"];
+var iAm = "I'm a ";
+var introIndex = 0;
+
 //console.log(document.getElementsByName('firstname').length);
 function buttonClick() {
     var FirstName = document.getElementById('n1');
@@ -26,10 +29,15 @@ function buttonClick() {
     } else {
 
         alert('Thank You')
-    }
+    }   
+}
 
 
-    
+function runIntroAnimation() {
+
+    var word = document.getElementById("intro");
+    word.textContent = introArr[introIndex];
+    introIndex = (introIndex + 1) % introArr.length;
 }
 
 

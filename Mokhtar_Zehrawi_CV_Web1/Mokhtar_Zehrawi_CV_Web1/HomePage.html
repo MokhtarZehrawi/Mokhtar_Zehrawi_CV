@@ -9,31 +9,77 @@
 
 
 </head>
-<body>
-    <div id="a0"></div>
+<body onload="runIntroAnimation(); setInterval(runIntroAnimation, 8000);">
+
+    <header class="nav">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button class="nav_button">Contact Me</button></a>
+    </header>
+
     <div class="master">
 
 
+        <div class="name_div">
+            <div style = "width : 66.67% ">
+                <p class="intro">Hello, I'm</p>
+                <h1 style ="padding-top: 20px; padding-bottom: 20px" class="name">Mokhtar Zehrawi</h1>
+                <p class="introAnimation" id="intro">Welcome to my interactive CV</p>
+            </div>
 
-        <div class="name">
-            <h1>Mokhtar Zehrawi</h1>
+            <div style = "width : 33.33%; padding-left : 200px;">
+                <img class="LinkedInPhoto" src="Photos/LinkedIn Profile Picture-cir.png" />
+            </div>
+         
+
+           
         </div>
 
-        <div class="intro">
-            <p>Welcome to my interactive CV</p>
+        <div style="display : flex; padding : 2px;">
+
+
+            <div id="M1_Left">
+                <p style="font-family: Cinzel;  padding-left:75px">Skills</p>
+                <ul>
+                    <li>Orange</li>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Pickles</li>
+                </ul>
+            </div>
+
+            <div id="M1">
+                <img src="Photos/B_Y.jpg" width="auto" height="500" style="display: block; margin: auto; text-align: center; vertical-align: middle;" />
+            </div>
+
+
+            <div id="M1_Right">
+               
+                <!--                  
+                <p style="font-family: Cinzel; padding-right : 75px;">Education</p>
+                <ul style="padding-left : 0px">
+                    <li>University of Ottawa – Bachelor of Applied Science – Computer Engineering</li>
+                    <br />
+                    <li>Gloucester High School - Diploma</li>
+                </ul>
+                -->
+
+
+            </div>
+
+
         </div>
 
-
-        <div class="default">
-
-
-            <img src="Photos/LinkedIn Profile Picture.jfif"
-                 width="auto"
-                 height="500" />
+        <div class="LinkedInPhoto">
+           
             <br />
             <a href="https://www.linkedin.com/in/mokhtar-zehrawi-a29249204/">My LinkedIn</a>
         </div>
-
         <div>
             <form action="HomePage.html" method="get" style="background-color:antiquewhite">
                 <input type="text" id="n1" name="firstname" placeholder="First Name" /><br />
@@ -45,13 +91,7 @@
 
 
 
-        <ul>
-            <li>This is unorder list</li>
-            <li>Orange</li>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Pickles</li>
-        </ul>
+
 
         <table border="1" height="100" width="200">
             <thead>
@@ -69,9 +109,6 @@
 
         </table>
 
-
-        <p>Hello World </p>
-        <p>Hello World123 </p>
     </div>
 
     <script src="Code.js"></script>
